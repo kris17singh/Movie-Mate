@@ -22,15 +22,16 @@ It allows users to search for movies, view details, and maintain their own bucke
 You can access the deployed website at:
 https://movie-mate-iota.vercel.app
 
-## Contribute
+## Contributions
 
-Contributions are welcome. If you wish to improve the project, follow these steps:
+Contributions are welcome!  
+If you wish to improve the project, follow these steps:
 
-1.Fork this repository.
-2.Create a new branch for your feature or fix.
-3.Make your changes and commit them.
-4.Push your branch to your forked repository.
-5.Open a pull request for review.
+1. Fork this repository.  
+2. Create a new branch for your feature or fix.  
+3. Make your changes and commit them.  
+4. Push your branch to your forked repository.  
+5. Open a pull request for review.
 
 Happy coding 🙂!
 
