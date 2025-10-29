@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>🎬 MovieMate</h1>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="favorites.html">Favorites ❤️</a>
+    </nav>
+  </header>
+
+  <div class="search-box">
+    <input type="text" id="movieInput" placeholder="Search for a movie ..." autocomplete="off" />
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div id="movieContainer" class="movie-container"></div>
+
+  <div class="pagination">
+    <button id="prevPage" disabled>⬅ Previous</button>
+    <span id="pageInfo">Page 1</span>
+    <button id="nextPage" disabled>Next ➡</button>
+  </div>
+
+  <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <div class="modal-inner">
+        <div class="modal-left">
+          <img id="modalPoster" src="" alt="">
+        </div>
+        <div class="modal-right" id="modalDetails"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

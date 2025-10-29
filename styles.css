@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #101820, #060b13);
+  color: #fff;
+  min-height: 100vh;
+  text-align: center;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #ff4757;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a.active {
+  text-decoration: underline;
+}
+
+.search-box {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 15px;
+  background: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #e84118;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.movie-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background: #0056b3;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #181c27;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.modal-left img {
+  border-radius: 10px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.modal-right {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+#closeModal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff4757;
+}
+
+.modal-right h2 {
+  margin-top: 0;
+  color: #ffcc00;
+}
+
+.modal-right p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.modal-right button {
+  background: #ff4757;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.modal-right button:hover {
+  background: #e84118;
+}
